@@ -24,20 +24,37 @@
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
-    <ul class="author__urls social-icons">
-      {% if author.location %}
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
-        </li>
-      {% endif %}
-
-      {% if author.links %}
-        {% for link in author.links %}
-          {% if link.label and link.url %}
-            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer me"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+    {% if author.links %}
+      {% if author.links_style == 'icons' %}
+          {% if author.location %}
+              <div class="author__urls_icons author__urls social-icons">
+                <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+                  <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+                </li>
+                </div>
+              {% endif %}
+              <div class="author__urls_icons author__urls social-icons" style="display:flex">
+                {% for link in author.links %}
+                  {% if link.url %}
+                    <a href="{{ link.url }}" style="text-decoration: none" rel="nofollow noopener noreferrer me"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %} class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></a>
+                  {% endif %}
+              {% endfor %}
+          </div>
+      {% else %}
+          <ul class="author__urls social-icons">
+          {% if author.location %}
+            <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+              <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+            </li>
           {% endif %}
-        {% endfor %}
-      {% endif %}
+
+          {% for link in author.links %}
+            {% if link.label and link.url %}
+              <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer me"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+        {% endif %}
 
       {% if author.uri %}
         <li>

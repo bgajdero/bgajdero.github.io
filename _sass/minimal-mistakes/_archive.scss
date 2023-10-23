@@ -9,12 +9,12 @@
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    // padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
+    // padding-right: $right-sidebar-width;
   }
 }
 
@@ -36,7 +36,7 @@
   padding-bottom: 0.5em;
   font-size: $type-size-5;
   color: $muted-text-color;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $muted-text-color;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -151,7 +151,8 @@
 
 .grid__item {
   margin-bottom: 2em;
-
+  border-color: $muted-text-color;
+  border-radius: $border-radius;
   @include breakpoint($small) {
     float: left;
     width: span(5 of 10);
@@ -170,30 +171,23 @@
   @include breakpoint($medium) {
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    width: span(4 of 12);
 
-    &:nth-child(2n + 1) {
-      clear: none;
-    }
-
-    &:nth-child(4n + 1) {
+    &:nth-child(3n + 1) {
       clear: both;
+      margin-left: 0;
     }
 
-    &:nth-child(4n + 2) {
+    &:nth-child(3n + 2) {
       clear: none;
-      margin-left: gutter(1 of 12);
+      margin-left: gutter(of 12);
     }
 
-    &:nth-child(4n + 3) {
+    &:nth-child(3n + 3) {
       clear: none;
-      margin-left: gutter(1 of 12);
+      margin-left: gutter(of 12);
     }
 
-    &:nth-child(4n + 4) {
-      clear: none;
-      margin-left: gutter(1 of 12);
-    }
   }
 
   .page__meta {
@@ -247,7 +241,10 @@
     margin-bottom: 0;
   }
 }
-
+.row {
+  margin-left: 60px;
+  margin-right:120px
+}
 .feature__item {
   position: relative;
   margin-bottom: 2em;
@@ -272,7 +269,6 @@
       clear: none;
       margin-left: gutter(of 12);
     }
-
     .feature__item-teaser {
       max-height: 200px;
       overflow: hidden;

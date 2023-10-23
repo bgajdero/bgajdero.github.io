@@ -1,12 +1,10 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Projects"
+    url: "/#projects-section"
+  - title: "CV"
+    url: "/Bart-Gajderowicz-CV-2023.pdf"
+  - title: "Publications"
+    url: /publications.html
   - title: "About"
-    url: https://bartg.org
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+    url: /about

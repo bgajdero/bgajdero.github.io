@@ -10,18 +10,18 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+# remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Home"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Bart Gajderowicz"
+description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -87,7 +87,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/img/bartg.jpeg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -105,52 +105,43 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Dr. Bart Gajderowicz"
+  avatar           : "/assets/img/bartg.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : 
+    "<ul style=\"padding-left: 15px\"><li>Sr. Research Associate,<br/><a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">Industrial Engineering</a>,<br/>University of Toronto</li>
+    <li>Executive Director,<br/><a style='text-decoration:underline' href=\"https://urbandatacentre.ca\">Urban Data Centre</a>,<br/> School of Cities,<br/>University of Toronto</li></ul>"
+  location         : "Toronto, Ontario, Canada"
   email            :
+  links_style       : 'default'
   links:
-    - label: "Email"
+    - label: "bartg@mie.utoronto.ca"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
+      url: "mailto:bartg@mie.utoronto.ca"
+    - label: "bartg.org"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
+      url: "https://bartg.org"
+    - label: "CV"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/Bart-Gajderowicz-CV-2023.pdf"
+    - label: "Scholar"
+      icon: "fas fa-fw ai ai-google-scholar"
+      url: "https://scholar.google.com/citations?user=Cl1pzRgAAAAJ"
+    - label: "ORCID"
+      icon: "fas fa-fw ai ai-orcid"
+      url: "https://orcid.org/0000-0001-6201-8781"
+    - label: "@bgajdero"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/bgajdero"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+    - label: "bartg@mie.utoronto.ca"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:bartg@mie.utoronto.ca"
+    - label: "bartg.org"
+      icon: "fas fa-fw fa-link"
+      url: "https://bartg.org"
 
 
 # Reading Files
@@ -219,7 +210,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 20 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -284,6 +275,20 @@ defaults:
   - scope:
       path: ""
       type: posts
+      author_profile: true
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+
+  # _publications
+  - scope:
+      path: ""
+      type: page
+      author_profile: true
     values:
       layout: single
       author_profile: true
