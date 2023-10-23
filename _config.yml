@@ -108,9 +108,13 @@ author:
   name             : "Dr. Bart Gajderowicz"
   avatar           : "/assets/img/bartg.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : 
-    "<ul style=\"padding-left: 15px\"><li>Sr. Research Associate,<br/><a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">Industrial Engineering</a>,<br/>University of Toronto</li>
-    <li>Executive Director,<br/><a style='text-decoration:underline' href=\"https://urbandatacentre.ca\">Urban Data Centre</a>,<br/> School of Cities,<br/>University of Toronto</li></ul>"
-  location         : "Toronto, Ontario, Canada"
+    "Executive Director @ <a style='text-decoration:underline' href=\"https://urbandatacentre.ca\">UDC</a><br/>
+    Sr. Research Associate @ <a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">MIE</a>"
+    
+  # bio              : 
+  #   "<ul style=\"padding-left: 15px\"><li>Sr. Research Associate,<br/><a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">Industrial Engineering</a>,<br/>University of Toronto</li>
+  #   <li>Executive Director,<br/><a style='text-decoration:underline' href=\"https://urbandatacentre.ca\">Urban Data Centre</a>,<br/> School of Cities,<br/>University of Toronto</li></ul>"
+  # location         : "Toronto, Ontario, Canada"
   email            :
   links_style       : 'default'
   links:
@@ -132,6 +136,9 @@ author:
     - label: "@bgajdero"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bgajdero"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://www.linkedin.com/in/bartgajderowicz/"
 
 # Site Footer
 footer:
@@ -139,6 +146,9 @@ footer:
     - label: "bartg@mie.utoronto.ca"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:bartg@mie.utoronto.ca"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://www.linkedin.com/in/bartgajderowicz/"
     - label: "bartg.org"
       icon: "fas fa-fw fa-link"
       url: "https://bartg.org"

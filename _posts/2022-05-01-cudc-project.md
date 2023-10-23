@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Canadian Urban Data Catalogue"
+title:  "CUDC - Canadian Urban Data Catalogue"
 date:   2023-01-01 09:41:09
 author: Bart Gajderowicz
 header:
