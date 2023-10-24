@@ -11,7 +11,6 @@
     width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: 0.75*$right-sidebar-width-narrow;
   }
-
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: 0.75*$right-sidebar-width;
@@ -28,6 +27,16 @@
 
   a {
     position: relative;
+  }
+  @media only screen and (min-width: 400px) and (max-width: 600px){
+    font-size: $type-size-6
+  }
+  @media only screen and (max-width: 400px){
+    font-size: $type-size-5
+  }
+  @media only screen and (max-width: 100px){
+    // font-size: $type-size-6;
+    padding-right: 10px
   }
 }
 
@@ -132,7 +141,6 @@
     text-decoration: none;
   }
 }
-
 /*
    List view
    ========================================================================== */
