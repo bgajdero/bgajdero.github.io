@@ -1,13 +1,14 @@
-I'm a computer social scientist at the University of Toronto. I study how people and groups interact in complex systems, with a focus on communities and urban spaces. I use artificial intelligence (AI) to help cities make smart decisions based on data. 
+# Welcome
+I'm a computer scientist at the Industrial Engineering Department at the University of Toronto. I use **ontologies** and **data-driven artificial intelligence** (AI) methods to study how people and groups interact in complex systems, including cities and communities.
 
 See a list of my [projects](#projects-section) and [publications](#publications-section) below.
 
-I create computer models that help us understand and improve our cities and communities. This work results in data standards that promote interoperability and tools that help analyze how different parts of a city or a community interact and work together. My goal is making data easy to use and understand, and tracking the activities that make impactful changes in our communities.
+I use AI to help cities make smart decisions based on data, relying on semantic technologies for data integration and decision support systems. 
 
-This work focuses on making sure data from different places can work together easily, helping organizations team up and share resources to tackle big challenges. We create **ontologies** that allow for **semantic interoperability** between data silos. We ensure interoperability by translating data into a single semantic representation stored in a knowledge graph. An **explainable language model** allows us to extract information and build a knowledge graph for custom domains.
+In my research groups we create **ontologies** that allow for **semantic interoperability** between data silos. We create **ETL pipelines** and consolidate data in a **knowledge graph**, and perform **data analysis**. An **explainable language model** allows us to extract information and build a knowledge graph for custom domains.
 
 Recently, our team has developed a [catalogue of urban datasets](/cudc-project) to help researchers find and integrate datasets from across Canada. This work resulted in a **Maturity Model** for urban dataset metadata.
 
 We have an ongoing partnership with the [Common Approach](/common-approach-project) where we continue to evolve the Common Impact Data Standard (CIDS) for measuring impact of social purpose organizations across Canada. 
 
-I'm currently working on new tools for government agencies to measure their impact, study how health information and opinions spreads online, and improve search capabilities across systems.
+I'm currently working on new tools for **government agencies** to **measure impact**, study how **health information** and opinions spreads online, and improve **search capabilities** across systems.
