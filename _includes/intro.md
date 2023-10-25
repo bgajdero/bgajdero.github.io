@@ -9,4 +9,4 @@ Recently, our team has developed a [catalogue of urban datasets](/cudc-project) 
 
 We have an ongoing partnership with the [Common Approach](/common-approach-project) where we continue to evolve the Common Impact Data Standard (CIDS) for measuring impact of social purpose organizations across Canada. 
 
-I'm currently working on new tools for **government agencies** to **measure impact**, study how **health information** and opinions spreads online, and improve **search capabilities** across systems.
+I'm currently working on new tools for **government agencies to measure impact**, study how **health information and opinions spreads online**, and improve **search capabilities in distributed systems**.
