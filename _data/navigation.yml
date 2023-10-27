@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "Projects"
-    url: "/#projects-section"
-  - title: "CV"
-    url: "/Bart-Gajderowicz-CV-2023.pdf"
+  - title: "Research"
+    url: "/#research-section"
   - title: "Publications"
     url: /publications.html
+  - title: "CV"
+    url: "/Bart-Gajderowicz-CV-2023.pdf"
   - title: "About"
     url: /about

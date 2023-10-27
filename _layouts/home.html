@@ -15,7 +15,7 @@ layout: archive
   {% assign posts = site.posts %}
 {% endif %}
 
-<h3 id="projects-section" class="archive__subtitle">{{ site.data.ui-text[site.locale].projects | default: "Projects" }}</h3>
+<h3 id="research-section" class="archive__subtitle">{{ site.data.ui-text[site.locale].research | site.data.ui-text[site.locale].projects | default: "Research2" }}</h3>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
