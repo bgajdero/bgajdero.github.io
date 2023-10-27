@@ -12,7 +12,7 @@ header:
 "What is a service?"
 The notion of "**services**" is inherently well understood by people, but it is difficult to define explicitly. The area of "**service science**" has recently been adopted to investigate the nature of services. Our project aims provide an ontological definition for the notion of a "**service**". This project is inspired by out work in the **social services**, a community-based and locally-focused service network that relies on personal connections as much as technological advancements.
 
-Towards this goal, we have been running workshop on ontologies of services and the society within which they exist.
+Towards this goal, we have been running workshops at [JOWO](https://www.iaoa.org/jowo/2023/index.html) on ontologies of services and the societies they shape and serve.
 
 ## OSS - International Workshop on Ontologies for Services and Society 
 Past events:
