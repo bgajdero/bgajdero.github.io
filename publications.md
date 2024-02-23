@@ -11,7 +11,7 @@ permalink: /publications
 
 
 <h3 id="invited-talks-section" class="archive__subtitle">{{ site.data.ui-text[site.locale].talks | default: "Invited Talks" }}</h3>
-<ul>
+<ol>
     <li>Seminar: “Integrative knowledge, ontology, and data for ecosystem and policy that ensure lifelong health, wealth and wellbeing and multi-level resilience,” Ecosystem and Policy: Faculty of Management, Precision Convergence-Retailing, McGill University. Panelists: Andrea Borghini, <b>Bart Gajderowicz</b>, Damien Dooley, John Keogh, February 2024. </li>
     <li>Speaker:  <b>Bart Gajderowicz</b>: “Towards an Ontology of Traceable Impact Management in the Agriculture Food Chain.” Series: The Convergent Innovation Webinar Series: Inventing “One-World” Solutions for Lifelong Wellness and Sustainable Economic Growth. Panelists: Jurij Skornik, Troy Ruemping, Rob Warren, Horia Bradau, Naomi Kay Fukagawa. December 6, 2023</li>
     <li>Panelist: Andrea Borghini (speaker): “Bots in the Kitchen: Philosophical Take on the Digital Food Transformation.” Series: The Convergent Innovation Webinar Series: Inventing “One-World” Solutions for Lifelong Wellness and Sustainable Economic Growth. Panelists: Brian King, Catherine Paquet, <b>Bart Gajderowicz</b>, Ebenezer Miezah Kwofie. September 23, 2024.</li>
@@ -24,4 +24,4 @@ permalink: /publications
     <li>Panelist: Ethics in Artificial Intelligence. Panelists: Dwija Patel, Matt Kantor, <b>Bart Gajderowicz</b>, and Myles Harrison. Toronto, Ontario, Canada, July 13, 2017</li>
     <li>Panelist: The Future of Semantic Web and its Applications, Panelists: Mark van Berkel, <b>Bart Gajderowicz</b>, and James Leigh; Toronto, Ontario, Canada, April 4, 2017</li>
     <li>Speaker: <b>Bart Gajderowicz</b>, Mark S. Fox, and Michael Grüninger.  Artificial Intelligence Planning Techniques for Emulating Agents, with Application in Social Services. Machine Intelligence Toronto. Toronto, Ontario, Canada, March 9, 2017.</li>
-</ul>
+</ol>
