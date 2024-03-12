@@ -1,11 +1,6 @@
 # Welcome
 I am a computer scientist and a researcher at the Industrial Engineering Department at the University of Toronto, with a focus on computational sociology. I use **ontologies** and **data-driven artificial intelligence** (AI) methods to study how people and groups interact in complex systems. My current focus is on cities, communities, and urban centres.
 
-<!-- 
-My research focuses on three key areas of Computational Sociology. 
-1. creating data-driven decision support systems with a holistic view of social behaviour;
-1. creating data integration and holistic view impact measurement model through semantic technologies and ETL; and
-1. creating human-centric simulation and evaluation models that consider various facets of human behaviour. -->
 
 See a list of my [research projects &#8675;](#research-section) and [publications &#8675;](#publications-section).
 
