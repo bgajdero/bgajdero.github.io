@@ -8,7 +8,7 @@
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <http://ontology.eil.utoronto.ca/gci/csse/ossn.owl>;
+	 prov:specializationOf <http://ontology.eil.utoronto.ca/csse/ossn.owl>;
 	 prov:wasGeneratedAt "2021-08-01";
 .
 :agent0 a prov:Agent; foaf:name "Bart Gajderowicz (bartg@mie.utoronto.ca)".
