@@ -1,13 +1,21 @@
 # Welcome
-I am a computer scientist and a researcher at the Industrial Engineering Department at the University of Toronto, with a focus on computational sociology. I use **ontologies** and **data-driven artificial intelligence** (AI) methods to study how people and groups interact in complex systems. My current focus is on cities, communities, and urban centres.
+I am an Assistant Professor (Temporary) in the [School of Computing](https://engineering.usu.edu/cs), at [Utah State University](https://engineering.usu.edu). I am also an Adjunct Assistant Professor (status only) at the [Mechanical and Industrial Engineering Department](https://www.mie.utoronto.ca) (AI and Information Engineering Group) at the [University of Toronto](https://www.utoronto.ca), where I collabroate with [Professor Mark Fox](https://www.mie.utoronto.ca/faculty_staff/fox/) in the [Urban Data Research Centre](https://urbandatacentre.ca/).
+
+## Research Interests
+
+- Distributed Decision Support Systems
+- Ontology Engineering
+- Software Engineering
+- Knowledge Graph Databases
+
+## Applications
+
+- Evaluating of complex social systems
+- Support sustainable communities
+- Smart Cities
+- Social Services
+
+My research integrates artificial intelligence, computational social sciences, and knowledge representation, with a focus on modelling, simulating, and evaluating complex social systems to support sustainable communities and smart cities. I serve as the director of the [SeMantIc roLe Extraction (SMILE)](/smile-project/) project, advancing explainable natural language understanding for impact modelling and lead development of tools such as [PARLANCE](/parlance-project/) for knowledge graph integration. I am a co-author on numerous [publications](#publications-section), as well as several data modelling standards focusing on urban datasets and impact measurements and plays a key role in interdisciplinary initiatives, such as chairing the [Ontologies for Services and Social Good](https://csse.utoronto.ca/oss2025) Workshop. My work, supported by fellowships, awards, and over $500,000 in research funding, spans distributed decision support systems, focusing on AI-driven planning algorithms, ontology matching, and natural language understanding, with the long-term goal of enabling data-driven decision-making for healthier and more resilient communities.
 
 
 See a list of my [research projects &#8675;](#research-section) and [publications &#8675;](#publications-section).
-
-I use AI to help organizations make smarter data-driven decisions. In my research group we create **ontologies** that allow for **semantic interoperability** between data silos. We create **ETL pipelines** that consolidate data in a **knowledge graph**, and perform **data analysis** on the graph. We are developing an **explainable language model** to extract information and build a knowledge graph for custom domains.
-
-Recently, our team has developed a [catalogue of urban datasets](/cudc-project) to help researchers find and integrate datasets from across Canada. This work resulted in a **Maturity Model** for urban dataset metadata.
-
-We have an ongoing partnership with the [Common Approach](/common-approach-project) where we continue to evolve the Common Impact Data Standard (CIDS) for measuring impact of social purpose organizations across Canada. 
-
-I'm currently working on new tools for **government agencies to measure impact**, study how **health information and opinions spreads online**, and improve **search capabilities in distributed systems**.

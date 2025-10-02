@@ -87,7 +87,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/img/bartg.jpeg" # Open Graph/Twitter default site image
+og_image                 : "/assets/img/bartg.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -106,21 +106,21 @@ analytics:
 # Site Author
 author:
   name             : "Dr. Bart Gajderowicz"
-  avatar           : "/assets/img/bartg.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/bartg.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : 
-    "Executive Director @ <a style='text-decoration:underline' href=\"https://urbandatacentre.ca\">UDC</a><br/>
-    Sr. Research Associate @ <a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">MIE</a>"
+    "Asst Prof @ <a style='text-decoration:underline' href=\"https://www.usu.edu/cs\">CS - USU</a><br/>
+    Asst Prof (Adj) @ <a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">MIE - UofT</a>"
     
   # bio              : 
   #   "<ul style=\"padding-left: 15px\"><li>Sr. Research Associate,<br/><a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">Industrial Engineering</a>,<br/>University of Toronto</li>
   #   <li>Executive Director,<br/><a style='text-decoration:underline' href=\"https://urbandatacentre.ca\">Urban Data Centre</a>,<br/> School of Cities,<br/>University of Toronto</li></ul>"
-  # location         : "Toronto, Ontario, Canada"
+  location         : "Logan, Utah, USA"
   email            :
   links_style       : 'default'
   links:
-    - label: "bartg@mie.utoronto.ca"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:bartg@mie.utoronto.ca"
+      url: "mailto:bart.gajderowicz@usu.edu"
     - label: "bartg.org"
       icon: "fas fa-fw fa-link"
       url: "https://bartg.org"
@@ -143,9 +143,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "bartg@mie.utoronto.ca"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:bartg@mie.utoronto.ca"
+    # - label: "bartg@mie.utoronto.ca"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:bartg@mie.utoronto.ca"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/bartgajderowicz/"
