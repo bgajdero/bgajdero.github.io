@@ -9,7 +9,7 @@ header:
 #   teaser: /assets/img/bartg.jpeg
 ---
 <!-- ![image tooltip here](/assets/img/bartg.jpeg) -->
-The [Common Impact Data Standard](https://www.commonapproach.org/common-impact-data-standard/) is a standardized way to represent a social purpose organization’s (SPO) impact model (i.e. their theory of change, logic model, outcome chain, etc). It is a way to represent impact as defined by the [Impact Management Project Norms](https://impactfrontiers.org/norms/) (now housed at Impact Frontiers). It enables the exchange of impact information between organizations regardless of the impact models being used.
+The [Common Impact Data Standard](https://www.commonapproach.org/standards/common-impact-data-standard/) is a standardized way to represent a social purpose organization’s (SPO) impact model (i.e. their theory of change, logic model, outcome chain, etc). It is a way to represent impact as defined by the [Impact Management Project Norms](https://impactfrontiers.org/norms/) (now housed at Impact Frontiers). It enables the exchange of impact information between organizations regardless of the impact models being used.
 
 We understand “impact” as a change in outcomes for people and the planet. To represent impact, the Common Impact Data Standard represents the five dimensions: what, who, how much, contribution and risk, plus a sixth dimension of how.
 
