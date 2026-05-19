@@ -108,12 +108,9 @@ author:
   name             : "Dr. Bart Gajderowicz"
   avatar           : "/assets/img/bartg.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : 
-    "Asst Prof @ <a style='text-decoration:underline' href=\"https://www.usu.edu/cs\">CS - USU</a><br/>
+    "Asst Prof @ <a style='text-decoration:underline' href=\"https://www.usu.edu/cs\">SoC - USU</a><br/>
     Asst Prof (Adj) @ <a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">MIE - UofT</a>"
     
-  # bio              : 
-  #   "<ul style=\"padding-left: 15px\"><li>Sr. Research Associate,<br/><a style='text-decoration:underline' href=\"https://mie.utoronto.ca\">Industrial Engineering</a>,<br/>University of Toronto</li>
-  #   <li>Executive Director,<br/><a style='text-decoration:underline' href=\"https://urbandatacentre.ca\">Urban Data Centre</a>,<br/> School of Cities,<br/>University of Toronto</li></ul>"
   location         : "Logan, Utah, USA"
   email            :
   links_style       : 'default'

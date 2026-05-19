@@ -5,10 +5,12 @@ I am also an Adjunct Assistant Professor (status only) at the [Mechanical and In
 
 ## Research Interests
 
+- Graph-Based Reasoning
 - Distributed Decision Support Systems
 - Ontology Engineering
 - Software Engineering
 - Knowledge Graph Databases
+- Artifical Intelligence
 
 ## Applications
 
