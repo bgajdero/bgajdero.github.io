@@ -1,16 +1,22 @@
 # Welcome
-I am an Assistant Professor (Temporary) in the [School of Computing](https://engineering.usu.edu/cs), at [Utah State University](https://engineering.usu.edu). 
+I am an Assistant Professor of Practice in the [School of Computing](https://engineering.usu.edu/cs), at [Utah State University](https://engineering.usu.edu) teaching Computer Science curriculum and collaborating on research in AI-based social modeling. 
 
 I am also an Adjunct Assistant Professor (status only) at the [Mechanical and Industrial Engineering Department](https://www.mie.utoronto.ca) (AI and Information Engineering Group) at the [University of Toronto](https://www.utoronto.ca), where I collabroate with [Professor Mark Fox](https://www.mie.utoronto.ca/faculty_staff/fox/) in the [Urban Data Research Centre](https://urbandatacentre.ca/).
 
 ## Research Interests
 
-- Graph-Based Reasoning
+- Hybrid Artificial Intelligence
+  - Combines symbolic and neural-based AI methods
+  - Focus on:
+    - Graph-Based Reasoning
+    - Computational Modeling
+    - Ontology Engineering
+
+- Graph-based Agentic AI
 - Distributed Decision Support Systems
-- Ontology Engineering
 - Software Engineering
 - Knowledge Graph Databases
-- Artifical Intelligence
+- Graph-based Retrieval Augmented Generation (GraphRAG)
 
 ## Applications
 
