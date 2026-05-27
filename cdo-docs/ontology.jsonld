@@ -1,0 +1,1228 @@
+[ {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/3.0/"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Bart Gajderowicz (bartg@secours.ai)"
+  }, {
+    "@value" : "Keith Dugas (keith.dugas@secours.ai)"
+  }, {
+    "@value" : "Paul Knowles (paul@secours.ai)"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "\nCore Domain Ontology (CDO) is a semantic model developed to support the Informatics Domain Model IDM. \nThe CDO is structured around five central nodes: objects, events, concepts, actions, and domain, which \nunderpin various aspects of planning, reasoning, and execution in digital systems. It enables \ndecentralized data representation, transformation, and alignment. \n                                "
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-05-26"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-03-27"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright @ 2026 Paul Knowles, Bart Gajderowicz, Keith Dugas"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Core Domain Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "cdo"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://ontology.cdo.network/cdo#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Core Domain Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/2006/time"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "\nVersion 1 May 26, 2026"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an intentional operation performed within a computational system that acts upon data to achieve a specific outcome, such as creation, transformation, transmission, or deletion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Active"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "data that is currently in use, being processed, or engaged in real-time operations within a computational system, often contributing to immediate functions, decisions, or interactions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Behaviour"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a defined unit of information within a data object that expresses a specific property, characteristic, or qualifier used to describe, differentiate, or structure the underlying entity."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Behaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the observable pattern of responses, interactions, or state changes exhibited by data within a computational system in reaction to specific inputs, conditions, or stimuli."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Card",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the central structural element within a data object that governs how its attributes are organized, interpreted, or processed within a given computational or semantic framework."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Cause",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an identified factor or trigger within a computational system that initiates or gives rise to a data event, state change, or processing action, often captured for traceability or causal analysis."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Chart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a visual representation of structured data within a computational system, expressed through tables, graphs, or diagrams to reveal patterns, trends, or relationships for interpretation or analysis."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an abstract, structured idea within a computational system that provides semantic meaning or contextual framing to data, enabling consistent interpretation, classification, and interoperability across domains."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Subjective"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "facts and statistics entered into a computational system, structured for reference, processing, or analysis within a defined informational context."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Effect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a resulting change or outcome within a computational system that occurs as a consequence of a specific data cause, action, or condition, often used to evaluate impact or derive meaning."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a recorded occurrence within a computational system that captures a change of state, action, or condition in time, often triggering processes or serving as a reference point in data trails."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Objective"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Fact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a verified unit of information within a computational system that represents an objective truth or observed reality, serving as a foundational element for analysis, inference, or decision-making."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Field",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a designated element within a data structure that holds a specific value corresponding to a defined attribute, enabling organized storage, access, and retrieval of information in a computational system."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Form",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a particular configuration or expression of data shaped by its structure, type, or representation within a computational system, often determining how it is stored, displayed, or exchanged."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Frame",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a semantic structure within a computational system that organizes and contextualizes data by linking attributes to concepts, enabling meaningful interpretation, interoperability, and knowledge representation."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a discrete, executable operation within a computational system that performs a defined task on data—such as computation, transformation, retrieval, or validation—to support a broader process or outcome."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Goal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a defined objective or desired outcome that guides the collection, processing, or analysis of data within a computational system, often shaping methodologies, metrics, or system behavior."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Index",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a structured containment layer that encapsulates one or more fields, defining local boundaries, validation logic, and schema constraints within a form or data model."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Ledger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an ordered and immutable collection of data logs or events maintained within a computational system to provide a verifiable record of actions, transactions, or changes over time."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Log",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a chronological record of system-generated or user-triggered events captured within a computational system to support monitoring, auditing, debugging, or traceability."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Mechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an established structural or procedural construct within a computational system that enables the flow, transformation, or enforcement of rules upon data as part of a broader operational process."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a defined and repeatable procedure within a computational system used to process, analyze, or manipulate data according to a systematic approach or established protocol."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Note",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a brief annotation or explanatory comment attached to a data element within a computational system, providing contextual insight, clarification, or guidance without altering the underlying data."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Notice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a time-sensitive notification within a computational system that conveys important information, conditions, or changes related to data, prompting awareness, preparation, or responsive action."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Object",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a structured data construct within a computational system that represents a defined entity or data model that encapsulates both its attributes and kernels for its structural interpretation or operation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Passive"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Objective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "data that represents observable facts or measurable phenomena within a computational system, recorded without personal bias or interpretation and verifiable through consistent methods or standards."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Perspective"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Package",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a bundled collection of programs or subroutines within a computational system, organized for coherent transport, processing, or reuse as a functional unit."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Packet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a structured unit of data formatted for transmission within or between computational systems, containing both payload and control information to ensure proper delivery, interpretation, and routing."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a semantic modifier within a computational system that refines the intent, scope, or behavior of a term or command, enabling contextual interpretation and meaningful configuration."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Passive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "data that resides in a computational system without actively influencing or participating in current processes, typically stored for reference, archival, or deferred analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Behaviour"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Payload",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the core content or meaningful information carried within a data packet, excluding metadata or control structures, and intended for processing, storage, or interpretation by the receiving system."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Perspective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a specific contextual or interpretive viewpoint applied to data within a computational system, shaping how it is understood, framed, or utilized based on user roles, objectives, or analytical models."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a defined set of principles or rules within a computational system that governs the collection, usage, access, sharing, or retention of data to ensure compliance, security, and ethical management."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the declared operational reason within a computational or analytical context for which data is collected, processed, or utilized, distinct from legal justification and focused on functional intent at the data layer."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Reason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "an explanatory reference within a computational system that justifies or clarifies the motivation behind a specific data-related action, decision, or condition, distinct from legal or policy mandates."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Receipt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a recorded acknowledgment within a computational system confirming the successful reception of a data object, message, or transaction, often including metadata such as timestamp, source, and verification status."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Record",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a structured collection of related data fields treated as a single unit within a computational system, typically representing an instance of an entity or event for storage, retrieval, or processing."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Schema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a structured framework that defines the organization, types, and relationships of data attributes within a data object, guiding its validation, interpretation, and integration in computational systems."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Scheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a defined and ordered arrangement of related data structures—such as schemas, fields, or classification systems—within a computational system, used to organize, relate, and standardize data across contexts."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#State",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the specific condition or configuration of a data object or system component at a given point in time, reflecting its current values, status, or operational context within a computational process."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Statement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a clearly defined expression of a fact, rule, or condition within a computational system, often used to declare, assert, or instruct how data should be processed, interpreted, or constrained."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Stemma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a branching diagram or structural lineage within a computational system that traces the derivation, transformation, or version history of data across sources or processes."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Subjective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "data that reflects personal opinions, interpretations, emotions, or perceptions captured within a computational system, often influenced by individual experience or context rather than objective measurement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Perspective"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Term",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a defined word or phrase used within a computational system to label, express, or reference a data concept, enabling standardized interpretation and communication across structured data environments."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Text",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "alphanumeric content within a computational system that conveys human-readable information, typically used for labels, descriptions, entries, or communication in structured or unstructured formats."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Token",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a discrete invocation unit within a computational system that conveys delegated authority and actively initiates the execution of specific actions or functions, serving as a proximal trigger within controlled workflows."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#Track",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a structured sequence of linked data points or events within a computational system that traces the progression, movement, or lifecycle of an entity or process over time."
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#accessedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Domain to a Concept, indicating that a Domain is accessed by a Concept."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Concept"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#achieves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Event to a Goal, indicating that an Event defines a Goal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Goal"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#acknowledges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Receipt to a Packet, inverse of acknowledges indicating that a Receipt acknowledges a Packet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Receipt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Packet"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#affirms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Statement to a Fact, indicating that a Statement affirms a Fact."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Statement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Fact"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#annotates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Text to a Chart, indicating that a Text annotates a Chart."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Chart"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#isAnnotatedBy"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#attributedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Event to a Reason, indicating that an Event is attributed to a Reason."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Reason"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#capturedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Domain to an Object, indicating that a Domain is captured as an Object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Object"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#confirms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Receipt to a Notice, inverse of isConfirmedBy indicating that a Receipt is confirmed by a Notice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Receipt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Notice"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#constructs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Mechanism to a Scheme, indicating that a Mechanism constructs a Scheme."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Mechanism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Scheme"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#contextualizes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Object to a Concept, indicating that a Concept contexualizes an Object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Object"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#conveys",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Packet to a Payload, indicating that a Packet conveys a Method."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Packet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Payload"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#declares",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Packet to a Method, indicating that a Packet declares a Method."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Packet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Method"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#defines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Term to a Concept, indicating that a Term defines a Concept."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Term"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#isDefinedBy"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#definesLayoutFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Schema to a Form, indicating that a Schema defines layout for a Form."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Schema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Form"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#delivers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Packet to a Statement, indicating that a Packet delivers a Statement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Packet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Statement"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#encapsulates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Function to a Payload, indicating that a Function encapsulates a Payload."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Payload"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#encodes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Payload to a State, indicating that a Payload encodes a State."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Payload"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#State"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#enteredAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Domain to an Event, indicating that a Domain is entered as an Event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Event"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#exchangedThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Domain to an Action, indicating that a Domain is exchanged through an Action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Action"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#fulfills",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Method to a Purpose, indicating that a Method fulfills a Purpose."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Purpose"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#grounds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Text to a Stemma, indicating that a Text grounds a Stemma."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Stemma"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#guides",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Purpose to a Reason, indicating that a Purpose guides a Reason."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Reason"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#hasMetadata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Packet to a Note, indicating that a Packet has metadata captured in a Note."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Packet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Note"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#initiates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Cause to an Action, indicating that an Cuase initiates an Action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Cause"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Action"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#invokes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Token to a Function, indicating that a Token invokes a Function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Token"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Function"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isAcknowledgedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Packet to a Receipt, inverse of acknowleges, indicating that a Packet is acknowledged by a Receipt."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Packet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Receipt"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#acknowledges"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isActivatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Action to a Token, indicating that an Action is activated by a Token."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Token"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isAddressedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Field to an Index, indicating that a Field is addressed by an Index."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Index"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isAnnotatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Chart to a Text, indicating that a Chart is annotated by a Text."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Chart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Text"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isBundledIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Card to a Schema, indicating that a Card is bundled in a Schema."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Card"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Schema"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isCapturedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Payload to a Record, indicating that a Payload is captured by a Record."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Payload"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Record"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isCommittedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Record to a Log, indicating that a Record is committed to a Log."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Log"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isConfirmedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Notice to a Receipt, inverse of confirms, indicating that a Notice confirms a Receipt."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Notice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Receipt"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#confirms"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isConsumedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Form to a Mechanism, indicating that a Form is consumed by a Mechanism."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Form"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Mechanism"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Concept to a Term, indicating that a Concept is defined by a Term."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Term"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isDerivedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Log to a Stemma, indicating that a Log is derived by a Stemma."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Log"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Stemma"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isDescribedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Object to an Attribute, indicating that an Object is described by an Attribute."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Attribute"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isDrivenBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Action to a Reason, indicating that an Action is driven by a Reason."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Reason"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isExplainedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Policy to a Note, indicating that a Policy is explained by a Note."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Policy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Note"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isExpressedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Attribute to a Card, indicating that an Attribute is expressed by a Card."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Card"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isFramedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Parameter to a Frame, indicating that a Parameter is framed by a Frame."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Frame"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isImpactedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Object to a Cause, indicating that an Object is impacted by a Cause."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Cause"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isInitiatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Action to a Cause, indicating that an Action is initiated by a Cause."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Cause"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isInstantiationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Action to a Method, indicating that an Action is an instantiation of a Method."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Method"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isIssuedUnder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Receipt to a Policy, indicating that a Receipt is issued under (according to) a Policy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Receipt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Policy"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isMetadataFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Note to a Packet, indicating that a Note is the metadata for a Packet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Note"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Packet"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#hasMetadata"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isOrientedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Goal to a Concept, indicating that a Goal is oriented by a Concept to be defined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Goal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Concept"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#orients"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isPackagedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Payload to a Package, indicating that a Payload is packaged as a Package."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Payload"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Package"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isRealizedThrough",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Effect to a Mechanism, indicating that an Effect is realized through a Mechanism."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Effect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Mechanism"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isRecordedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Ledger to a Track, indicating that a Ledger is recorded as a Track."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Ledger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Track"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isRefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Term to a Parameter, indicating that a Term is refined by a Parameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Term"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Parameter"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isRegisteredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Index to a Record, indicating that an Index is registered by a Record."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Index"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Record"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isRepresentedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a State to a Chart, indicating that a State is represented by a Chart."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#State"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Chart"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isScopedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Concept to a Scheme, indicating that a Concept is scoped by a Scheme."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Scheme"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isStructuredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Object to a Scheme, indicating that an Object is structured by a Scheme."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Scheme"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isTransmittedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Package to a Packet, indicating that a Package is transmitted as a Packet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Package"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Packet"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#isWrittenTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Stemma to a Ledger, indicating that a Stemma is written to a Ledger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Stemma"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Ledger"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#loggedAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The recorded process logs of the schema synthesization and transformation pipeline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Log"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#Instant"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#occursIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Event to a Field, indicating that an Event occurs in a Field."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Field"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#orders",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Stemma to an Effect, indicating that a Stemma orders an Effect."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Stemma"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Effect"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#orients",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Concept to a Goal, indicating that a Concept orients a Goal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Goal"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#produces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Action to an Event, indicating that an Action produces an Event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Event"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#realizes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Event to an Effect, indicating that an Event realizes an Effect."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Effect"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#represents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Form to a State, indicating that a Form represents a State."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Form"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#State"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#specifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Concept to a Method, indicating that a Concept specifies a Method."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Method"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#stores",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Record to a Form, indicating that a Record stores a Form."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Form"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#supports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Fact to a Purpose, indicating that a Fact supports a Purpose."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Fact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Purpose"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#traces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Track to a Stemma, indicating that a Track traces a Stemma."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Track"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Stemma"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#undergoes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates an Object to an Effect, indicating that an Object undergoes an Effect."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Effect"
+  } ]
+}, {
+  "@id" : "https://ontology.cdo.network/cdo#yields",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "relates a Frame to a Notice, indicating that a Frame yields a Notice."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Frame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://ontology.cdo.network/cdo#Notice"
+  } ]
+} ]

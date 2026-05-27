@@ -1,0 +1,1326 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://ontology.cdo.network/cdo#"
+     xml:base="https://ontology.cdo.network/cdo"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://ontology.cdo.network/cdo#">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
+        <terms:creator>Bart Gajderowicz (bartg@secours.ai)</terms:creator>
+        <terms:creator>Keith Dugas (keith.dugas@secours.ai)</terms:creator>
+        <terms:creator>Paul Knowles (paul@secours.ai)</terms:creator>
+        <terms:description>
+Core Domain Ontology (CDO) is a semantic model developed to support the Informatics Domain Model IDM. 
+The CDO is structured around five central nodes: objects, events, concepts, actions, and domain, which 
+underpin various aspects of planning, reasoning, and execution in digital systems. It enables 
+decentralized data representation, transformation, and alignment. 
+                                </terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-05-26</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-27</terms:modified>
+        <terms:rights>Copyright @ 2026 Paul Knowles, Bart Gajderowicz, Keith Dugas</terms:rights>
+        <terms:title>Core Domain Ontology</terms:title>
+        <vann:preferredNamespacePrefix>cdo</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://ontology.cdo.network/cdo#</vann:preferredNamespaceUri>
+        <rdfs:label>Core Domain Ontology</rdfs:label>
+        <owl:versionInfo>
+Version 1 May 26, 2026</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#accessedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#accessedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Domain"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Concept"/>
+        <rdfs:comment>relates a Domain to a Concept, indicating that a Domain is accessed by a Concept.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#achieves -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#achieves">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Event"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Goal"/>
+        <rdfs:comment>relates an Event to a Goal, indicating that an Event defines a Goal.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#acknowledges -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#acknowledges">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Receipt"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Packet"/>
+        <rdfs:comment>relates a Receipt to a Packet, inverse of acknowledges indicating that a Receipt acknowledges a Packet.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#affirms -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#affirms">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Statement"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Fact"/>
+        <rdfs:comment>relates a Statement to a Fact, indicating that a Statement affirms a Fact.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#annotates -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#annotates">
+        <owl:inverseOf rdf:resource="https://ontology.cdo.network/cdo#isAnnotatedBy"/>
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Text"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Chart"/>
+        <rdfs:comment>relates a Text to a Chart, indicating that a Text annotates a Chart.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#attributedTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#attributedTo">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Event"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Reason"/>
+        <rdfs:comment>relates an Event to a Reason, indicating that an Event is attributed to a Reason.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#capturedAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#capturedAs">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Domain"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Object"/>
+        <rdfs:comment>relates a Domain to an Object, indicating that a Domain is captured as an Object.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#confirms -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#confirms">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Receipt"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Notice"/>
+        <rdfs:comment>relates a Receipt to a Notice, inverse of isConfirmedBy indicating that a Receipt is confirmed by a Notice.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#constructs -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#constructs">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Mechanism"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Scheme"/>
+        <rdfs:comment>relates a Mechanism to a Scheme, indicating that a Mechanism constructs a Scheme.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#contextualizes -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#contextualizes">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Concept"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Object"/>
+        <rdfs:comment>relates a Object to a Concept, indicating that a Concept contexualizes an Object.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#conveys -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#conveys">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Packet"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Payload"/>
+        <rdfs:comment>relates a Packet to a Payload, indicating that a Packet conveys a Method.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#declares -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#declares">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Packet"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Method"/>
+        <rdfs:comment>relates a Packet to a Method, indicating that a Packet declares a Method.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#defines -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#defines">
+        <owl:inverseOf rdf:resource="https://ontology.cdo.network/cdo#isDefinedBy"/>
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Term"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Concept"/>
+        <rdfs:comment>relates a Term to a Concept, indicating that a Term defines a Concept.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#definesLayoutFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#definesLayoutFor">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Schema"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Form"/>
+        <rdfs:comment>relates a Schema to a Form, indicating that a Schema defines layout for a Form.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#delivers -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#delivers">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Packet"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Statement"/>
+        <rdfs:comment>relates a Packet to a Statement, indicating that a Packet delivers a Statement.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#encapsulates -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#encapsulates">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Function"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Payload"/>
+        <rdfs:comment>relates a Function to a Payload, indicating that a Function encapsulates a Payload.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#encodes -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#encodes">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Payload"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#State"/>
+        <rdfs:comment>relates a Payload to a State, indicating that a Payload encodes a State.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#enteredAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#enteredAs">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Domain"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Event"/>
+        <rdfs:comment>relates a Domain to an Event, indicating that a Domain is entered as an Event.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#exchangedThrough -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#exchangedThrough">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Domain"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Action"/>
+        <rdfs:comment>relates a Domain to an Action, indicating that a Domain is exchanged through an Action.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#fulfills -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#fulfills">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Method"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Purpose"/>
+        <rdfs:comment>relates a Method to a Purpose, indicating that a Method fulfills a Purpose.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#grounds -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#grounds">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Text"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Stemma"/>
+        <rdfs:comment>relates a Text to a Stemma, indicating that a Text grounds a Stemma.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#guides -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#guides">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Purpose"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Reason"/>
+        <rdfs:comment>relates a Purpose to a Reason, indicating that a Purpose guides a Reason.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#hasMetadata -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#hasMetadata">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Packet"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Note"/>
+        <rdfs:comment>relates a Packet to a Note, indicating that a Packet has metadata captured in a Note.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#initiates -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#initiates">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Cause"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Action"/>
+        <rdfs:comment>relates a Cause to an Action, indicating that an Cuase initiates an Action.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#invokes -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#invokes">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Token"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Function"/>
+        <rdfs:comment>relates a Token to a Function, indicating that a Token invokes a Function.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isAcknowledgedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isAcknowledgedBy">
+        <owl:inverseOf rdf:resource="https://ontology.cdo.network/cdo#acknowledges"/>
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Packet"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Receipt"/>
+        <rdfs:comment>relates a Packet to a Receipt, inverse of acknowleges, indicating that a Packet is acknowledged by a Receipt.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isActivatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isActivatedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Action"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Token"/>
+        <rdfs:comment>relates an Action to a Token, indicating that an Action is activated by a Token.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isAddressedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isAddressedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Field"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Index"/>
+        <rdfs:comment>relates a Field to an Index, indicating that a Field is addressed by an Index.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isAnnotatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isAnnotatedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Chart"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Text"/>
+        <rdfs:comment>relates a Chart to a Text, indicating that a Chart is annotated by a Text.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isBundledIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isBundledIn">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Card"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Schema"/>
+        <rdfs:comment>relates a Card to a Schema, indicating that a Card is bundled in a Schema.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isCapturedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isCapturedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Payload"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Record"/>
+        <rdfs:comment>relates a Payload to a Record, indicating that a Payload is captured by a Record.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isCommittedTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isCommittedTo">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Record"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Log"/>
+        <rdfs:comment>relates a Record to a Log, indicating that a Record is committed to a Log.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isConfirmedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isConfirmedBy">
+        <owl:inverseOf rdf:resource="https://ontology.cdo.network/cdo#confirms"/>
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Notice"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Receipt"/>
+        <rdfs:comment>relates a Notice to a Receipt, inverse of confirms, indicating that a Notice confirms a Receipt.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isConsumedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isConsumedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Form"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Mechanism"/>
+        <rdfs:comment>relates a Form to a Mechanism, indicating that a Form is consumed by a Mechanism.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isDefinedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isDefinedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Concept"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Term"/>
+        <rdfs:comment>relates a Concept to a Term, indicating that a Concept is defined by a Term.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isDerivedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isDerivedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Log"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Stemma"/>
+        <rdfs:comment>relates a Log to a Stemma, indicating that a Log is derived by a Stemma.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isDescribedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isDescribedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Object"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Attribute"/>
+        <rdfs:comment>relates an Object to an Attribute, indicating that an Object is described by an Attribute.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isDrivenBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isDrivenBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Action"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Reason"/>
+        <rdfs:comment>relates an Action to a Reason, indicating that an Action is driven by a Reason.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isExplainedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isExplainedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Policy"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Note"/>
+        <rdfs:comment>relates a Policy to a Note, indicating that a Policy is explained by a Note.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isExpressedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isExpressedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Attribute"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Card"/>
+        <rdfs:comment>relates a Attribute to a Card, indicating that an Attribute is expressed by a Card.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isFramedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isFramedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Parameter"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Frame"/>
+        <rdfs:comment>relates a Parameter to a Frame, indicating that a Parameter is framed by a Frame.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isImpactedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isImpactedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Object"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Cause"/>
+        <rdfs:comment>relates an Object to a Cause, indicating that an Object is impacted by a Cause.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isInitiatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isInitiatedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Action"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Cause"/>
+        <rdfs:comment>relates an Action to a Cause, indicating that an Action is initiated by a Cause.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isInstantiationOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isInstantiationOf">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Action"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Method"/>
+        <rdfs:comment>relates an Action to a Method, indicating that an Action is an instantiation of a Method.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isIssuedUnder -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isIssuedUnder">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Receipt"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Policy"/>
+        <rdfs:comment>relates a Receipt to a Policy, indicating that a Receipt is issued under (according to) a Policy.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isMetadataFor -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isMetadataFor">
+        <owl:inverseOf rdf:resource="https://ontology.cdo.network/cdo#hasMetadata"/>
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Note"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Packet"/>
+        <rdfs:comment>relates a Note to a Packet, indicating that a Note is the metadata for a Packet.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isOrientedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isOrientedBy">
+        <owl:inverseOf rdf:resource="https://ontology.cdo.network/cdo#orients"/>
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Goal"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Concept"/>
+        <rdfs:comment>relates a Goal to a Concept, indicating that a Goal is oriented by a Concept to be defined.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isPackagedAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isPackagedAs">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Payload"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Package"/>
+        <rdfs:comment>relates a Payload to a Package, indicating that a Payload is packaged as a Package.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isRealizedThrough -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isRealizedThrough">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Effect"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Mechanism"/>
+        <rdfs:comment>relates an Effect to a Mechanism, indicating that an Effect is realized through a Mechanism.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isRecordedAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isRecordedAs">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Ledger"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Track"/>
+        <rdfs:comment>relates a Ledger to a Track, indicating that a Ledger is recorded as a Track.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isRefinedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isRefinedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Term"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Parameter"/>
+        <rdfs:comment>relates a Term to a Parameter, indicating that a Term is refined by a Parameter.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isRegisteredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isRegisteredBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Index"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Record"/>
+        <rdfs:comment>relates an Index to a Record, indicating that an Index is registered by a Record.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isRepresentedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isRepresentedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#State"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Chart"/>
+        <rdfs:comment>relates a State to a Chart, indicating that a State is represented by a Chart.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isScopedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isScopedBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Concept"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Scheme"/>
+        <rdfs:comment>relates a Concept to a Scheme, indicating that a Concept is scoped by a Scheme.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isStructuredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isStructuredBy">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Object"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Scheme"/>
+        <rdfs:comment>relates an Object to a Scheme, indicating that an Object is structured by a Scheme.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isTransmittedAs -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isTransmittedAs">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Package"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Packet"/>
+        <rdfs:comment>relates a Package to a Packet, indicating that a Package is transmitted as a Packet.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#isWrittenTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#isWrittenTo">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Stemma"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Ledger"/>
+        <rdfs:comment>relates a Stemma to a Ledger, indicating that a Stemma is written to a Ledger.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#loggedAt -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#loggedAt">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Log"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:comment>The recorded process logs of the schema synthesization and transformation pipeline.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#occursIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#occursIn">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Event"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Field"/>
+        <rdfs:comment>relates an Event to a Field, indicating that an Event occurs in a Field.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#orders -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#orders">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Stemma"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Effect"/>
+        <rdfs:comment>relates a Stemma to an Effect, indicating that a Stemma orders an Effect.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#orients -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#orients">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Concept"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Goal"/>
+        <rdfs:comment>relates a Concept to a Goal, indicating that a Concept orients a Goal.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#produces -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#produces">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Action"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Event"/>
+        <rdfs:comment>relates an Action to an Event, indicating that an Action produces an Event.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#realizes -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#realizes">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Event"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Effect"/>
+        <rdfs:comment>relates an Event to an Effect, indicating that an Event realizes an Effect.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#represents -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#represents">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Form"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#State"/>
+        <rdfs:comment>relates a Form to a State, indicating that a Form represents a State.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#specifies -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#specifies">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Concept"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Method"/>
+        <rdfs:comment>relates a Concept to a Method, indicating that a Concept specifies a Method.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#stores -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#stores">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Record"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Form"/>
+        <rdfs:comment>relates a Record to a Form, indicating that a Record stores a Form.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#supports -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#supports">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Fact"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Purpose"/>
+        <rdfs:comment>relates a Fact to a Purpose, indicating that a Fact supports a Purpose.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#traces -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#traces">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Track"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Stemma"/>
+        <rdfs:comment>relates a Track to a Stemma, indicating that a Track traces a Stemma.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#undergoes -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#undergoes">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Object"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Effect"/>
+        <rdfs:comment>relates an Object to an Effect, indicating that an Object undergoes an Effect.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#yields -->
+
+
+    <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#yields">
+        <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Frame"/>
+        <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Notice"/>
+        <rdfs:comment>relates a Frame to a Notice, indicating that a Frame yields a Notice.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Action -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Action">
+        <rdfs:subClassOf rdf:resource="https://ontology.cdo.network/cdo#Active"/>
+        <rdfs:comment>an intentional operation performed within a computational system that acts upon data to achieve a specific outcome, such as creation, transformation, transmission, or deletion.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Active -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Active">
+        <rdfs:subClassOf rdf:resource="https://ontology.cdo.network/cdo#Behaviour"/>
+        <rdfs:comment>data that is currently in use, being processed, or engaged in real-time operations within a computational system, often contributing to immediate functions, decisions, or interactions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Attribute -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Attribute">
+        <rdfs:comment>a defined unit of information within a data object that expresses a specific property, characteristic, or qualifier used to describe, differentiate, or structure the underlying entity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Behaviour -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Behaviour">
+        <rdfs:comment>the observable pattern of responses, interactions, or state changes exhibited by data within a computational system in reaction to specific inputs, conditions, or stimuli.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Card -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Card">
+        <rdfs:comment>the central structural element within a data object that governs how its attributes are organized, interpreted, or processed within a given computational or semantic framework.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Cause -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Cause">
+        <rdfs:comment>an identified factor or trigger within a computational system that initiates or gives rise to a data event, state change, or processing action, often captured for traceability or causal analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Chart -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Chart">
+        <rdfs:comment>a visual representation of structured data within a computational system, expressed through tables, graphs, or diagrams to reveal patterns, trends, or relationships for interpretation or analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Concept -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Concept">
+        <rdfs:subClassOf rdf:resource="https://ontology.cdo.network/cdo#Subjective"/>
+        <rdfs:comment>an abstract, structured idea within a computational system that provides semantic meaning or contextual framing to data, enabling consistent interpretation, classification, and interoperability across domains.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Domain -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Domain">
+        <rdfs:comment>facts and statistics entered into a computational system, structured for reference, processing, or analysis within a defined informational context.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Effect -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Effect">
+        <rdfs:comment>a resulting change or outcome within a computational system that occurs as a consequence of a specific data cause, action, or condition, often used to evaluate impact or derive meaning.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Event -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Event">
+        <rdfs:subClassOf rdf:resource="https://ontology.cdo.network/cdo#Objective"/>
+        <rdfs:comment>a recorded occurrence within a computational system that captures a change of state, action, or condition in time, often triggering processes or serving as a reference point in data trails.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Fact -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Fact">
+        <rdfs:comment>a verified unit of information within a computational system that represents an objective truth or observed reality, serving as a foundational element for analysis, inference, or decision-making.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Field -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Field">
+        <rdfs:comment>a designated element within a data structure that holds a specific value corresponding to a defined attribute, enabling organized storage, access, and retrieval of information in a computational system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Form -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Form">
+        <rdfs:comment>a particular configuration or expression of data shaped by its structure, type, or representation within a computational system, often determining how it is stored, displayed, or exchanged.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Frame -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Frame">
+        <rdfs:comment>a semantic structure within a computational system that organizes and contextualizes data by linking attributes to concepts, enabling meaningful interpretation, interoperability, and knowledge representation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Function -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Function">
+        <rdfs:comment>a discrete, executable operation within a computational system that performs a defined task on data—such as computation, transformation, retrieval, or validation—to support a broader process or outcome.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Goal -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Goal">
+        <rdfs:comment>a defined objective or desired outcome that guides the collection, processing, or analysis of data within a computational system, often shaping methodologies, metrics, or system behavior.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Index -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Index">
+        <rdfs:comment>a structured containment layer that encapsulates one or more fields, defining local boundaries, validation logic, and schema constraints within a form or data model.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Ledger -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Ledger">
+        <rdfs:comment>an ordered and immutable collection of data logs or events maintained within a computational system to provide a verifiable record of actions, transactions, or changes over time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Log -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Log">
+        <rdfs:comment>a chronological record of system-generated or user-triggered events captured within a computational system to support monitoring, auditing, debugging, or traceability.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Mechanism -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Mechanism">
+        <rdfs:comment>an established structural or procedural construct within a computational system that enables the flow, transformation, or enforcement of rules upon data as part of a broader operational process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Method -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Method">
+        <rdfs:comment>a defined and repeatable procedure within a computational system used to process, analyze, or manipulate data according to a systematic approach or established protocol.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Note -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Note">
+        <rdfs:comment>a brief annotation or explanatory comment attached to a data element within a computational system, providing contextual insight, clarification, or guidance without altering the underlying data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Notice -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Notice">
+        <rdfs:comment>a time-sensitive notification within a computational system that conveys important information, conditions, or changes related to data, prompting awareness, preparation, or responsive action.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Object -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Object">
+        <rdfs:subClassOf rdf:resource="https://ontology.cdo.network/cdo#Passive"/>
+        <rdfs:comment>a structured data construct within a computational system that represents a defined entity or data model that encapsulates both its attributes and kernels for its structural interpretation or operation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Objective -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Objective">
+        <rdfs:subClassOf rdf:resource="https://ontology.cdo.network/cdo#Perspective"/>
+        <rdfs:comment>data that represents observable facts or measurable phenomena within a computational system, recorded without personal bias or interpretation and verifiable through consistent methods or standards.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Package -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Package">
+        <rdfs:comment>a bundled collection of programs or subroutines within a computational system, organized for coherent transport, processing, or reuse as a functional unit.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Packet -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Packet">
+        <rdfs:comment>a structured unit of data formatted for transmission within or between computational systems, containing both payload and control information to ensure proper delivery, interpretation, and routing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Parameter -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Parameter">
+        <rdfs:comment>a semantic modifier within a computational system that refines the intent, scope, or behavior of a term or command, enabling contextual interpretation and meaningful configuration.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Passive -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Passive">
+        <rdfs:subClassOf rdf:resource="https://ontology.cdo.network/cdo#Behaviour"/>
+        <rdfs:comment>data that resides in a computational system without actively influencing or participating in current processes, typically stored for reference, archival, or deferred analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Payload -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Payload">
+        <rdfs:comment>the core content or meaningful information carried within a data packet, excluding metadata or control structures, and intended for processing, storage, or interpretation by the receiving system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Perspective -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Perspective">
+        <rdfs:comment>a specific contextual or interpretive viewpoint applied to data within a computational system, shaping how it is understood, framed, or utilized based on user roles, objectives, or analytical models.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Policy -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Policy">
+        <rdfs:comment>a defined set of principles or rules within a computational system that governs the collection, usage, access, sharing, or retention of data to ensure compliance, security, and ethical management.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Purpose -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Purpose">
+        <rdfs:comment>the declared operational reason within a computational or analytical context for which data is collected, processed, or utilized, distinct from legal justification and focused on functional intent at the data layer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Reason -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Reason">
+        <rdfs:comment>an explanatory reference within a computational system that justifies or clarifies the motivation behind a specific data-related action, decision, or condition, distinct from legal or policy mandates.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Receipt -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Receipt">
+        <rdfs:comment>a recorded acknowledgment within a computational system confirming the successful reception of a data object, message, or transaction, often including metadata such as timestamp, source, and verification status.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Record -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Record">
+        <rdfs:comment>a structured collection of related data fields treated as a single unit within a computational system, typically representing an instance of an entity or event for storage, retrieval, or processing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Schema -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Schema">
+        <rdfs:comment>a structured framework that defines the organization, types, and relationships of data attributes within a data object, guiding its validation, interpretation, and integration in computational systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Scheme -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Scheme">
+        <rdfs:comment>a defined and ordered arrangement of related data structures—such as schemas, fields, or classification systems—within a computational system, used to organize, relate, and standardize data across contexts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#State -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#State">
+        <rdfs:comment>the specific condition or configuration of a data object or system component at a given point in time, reflecting its current values, status, or operational context within a computational process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Statement -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Statement">
+        <rdfs:comment>a clearly defined expression of a fact, rule, or condition within a computational system, often used to declare, assert, or instruct how data should be processed, interpreted, or constrained.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Stemma -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Stemma">
+        <rdfs:comment>a branching diagram or structural lineage within a computational system that traces the derivation, transformation, or version history of data across sources or processes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Subjective -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Subjective">
+        <rdfs:subClassOf rdf:resource="https://ontology.cdo.network/cdo#Perspective"/>
+        <rdfs:comment>data that reflects personal opinions, interpretations, emotions, or perceptions captured within a computational system, often influenced by individual experience or context rather than objective measurement.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Term -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Term">
+        <rdfs:comment>a defined word or phrase used within a computational system to label, express, or reference a data concept, enabling standardized interpretation and communication across structured data environments.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Text -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Text">
+        <rdfs:comment>alphanumeric content within a computational system that conveys human-readable information, typically used for labels, descriptions, entries, or communication in structured or unstructured formats.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Token -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Token">
+        <rdfs:comment>a discrete invocation unit within a computational system that conveys delegated authority and actively initiates the execution of specific actions or functions, serving as a proximal trigger within controlled workflows.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://ontology.cdo.network/cdo#Track -->
+
+
+    <owl:Class rdf:about="https://ontology.cdo.network/cdo#Track">
+        <rdfs:comment>a structured sequence of linked data points or events within a computational system that traces the progression, movement, or lifecycle of an entity or process over time.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -12,7 +12,7 @@ tag-name: ontology  social-services needs
 <!-- ![image tooltip here](/assets/img/bartg.jpeg) -->
 The Ontology of Social Service Needs (OSSN) represents service provisioning from the perspective of a cognitive, goal-driven client to evaluate services based on how well they remove a client’s constraints and meet client needs.
 
-Browse the [OSSN here](/ossn-doc-html/index-en.html).
+Browse the [OSSN here](/ossn-docs/index-en.html).
 
 OSSN is grounded in real-life requests made by participants of a Housing First intervention program, resulting in 58 different goal types. Each goal is mapped to one or more basic human needs defined by Maslow’s Hierarchy, as inferred from the goal’s type, the motivation behind it, and the client’s demographics. Finally, as clients interact with service providers, three different types of goal orderings are required to capture goal ranking during the planning and execution phases. These include the client’s preferred order, Maslow’s Hierarchy order, and the practical order imposed by the logistical constraints of service providers.
 
