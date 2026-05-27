@@ -225,6 +225,7 @@ Version 1 May 26, 2026""" .
 
 ###  https://ontology.cdo.network/cdo#initiates
 :initiates rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isInitiatedBy ;
            rdfs:domain :Cause ;
            rdfs:range :Action ;
            rdfs:comment "relates a Cause to an Action, indicating that an Cuase initiates an Action." .

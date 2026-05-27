@@ -191,6 +191,7 @@
 # 
 # https://ontology.cdo.network/cdo#initiates
 <https://ontology.cdo.network/cdo#initiates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontology.cdo.network/cdo#initiates> <http://www.w3.org/2002/07/owl#inverseOf> <https://ontology.cdo.network/cdo#isInitiatedBy> .
 <https://ontology.cdo.network/cdo#initiates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontology.cdo.network/cdo#Cause> .
 <https://ontology.cdo.network/cdo#initiates> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontology.cdo.network/cdo#Action> .
 <https://ontology.cdo.network/cdo#initiates> <http://www.w3.org/2000/01/rdf-schema#comment> "relates a Cause to an Action, indicating that an Cuase initiates an Action." .

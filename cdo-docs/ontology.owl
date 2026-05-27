@@ -360,6 +360,7 @@ Version 1 May 26, 2026</owl:versionInfo>
 
 
     <owl:ObjectProperty rdf:about="https://ontology.cdo.network/cdo#initiates">
+        <owl:inverseOf rdf:resource="https://ontology.cdo.network/cdo#isInitiatedBy"/>
         <rdfs:domain rdf:resource="https://ontology.cdo.network/cdo#Cause"/>
         <rdfs:range rdf:resource="https://ontology.cdo.network/cdo#Action"/>
         <rdfs:comment>relates a Cause to an Action, indicating that an Cuase initiates an Action.</rdfs:comment>
