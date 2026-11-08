@@ -1,9 +1,12 @@
 # Welcome
 I am an Assistant Professor of Practice in the [School of Computing](https://engineering.usu.edu/cs), at [Utah State University](https://engineering.usu.edu) teaching Computer Science curriculum and collaborating on research in AI-based social modeling. 
 
+I am the Director of the [Semantic and Computational Intelligence Modeling Lab (SCIM)](https://lab.bartg.org).
+
 I am also an Adjunct Assistant Professor (status only) at the [Mechanical and Industrial Engineering Department](https://www.mie.utoronto.ca) (AI and Information Engineering Group) at the [University of Toronto](https://www.utoronto.ca), where I collabroate with [Professor Mark Fox](https://www.mie.utoronto.ca/faculty_staff/fox/) in the [Urban Data Research Centre](https://urbandatacentre.ca/).
 
 ## Research Interests
+Please visit the [SCIM LAB](https://lab.bartg.org) for more details.
 
 - Hybrid Artificial Intelligence
   - Combines symbolic and neural-based AI methods
