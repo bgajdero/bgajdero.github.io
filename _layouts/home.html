@@ -15,13 +15,13 @@ layout: archive
   {% assign posts = site.posts %}
 {% endif %}
 
-<h2 id="research-section" class="archive__subtitle2">{{ site.data.ui-text[site.locale].research_projects | site.data.ui-text[site.locale].projects | default: "Research2" }}</h2>
+<!-- <h2 id="research-section" class="archive__subtitle2">{{ site.data.ui-text[site.locale].research_projects | site.data.ui-text[site.locale].projects | default: "Research2" }}</h2>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
-</div>
+</div> -->
 
 {% include paginator.html %}

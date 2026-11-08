@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Research"
-    url: "/#research-section"
+  - title: "Research (SCIM Lab)"
+    url: "https://lab.bartg.org"
   - title: "Publications"
     url: /publications.html
   - title: "CV"
