@@ -1,9 +1,11 @@
 # main links
 main:
-  - title: "Research (SCIM Lab)"
+  - title: "SCIM Lab"
     url: "https://lab.bartg.org"
   - title: "Publications"
     url: /publications.html
+  - title: "Teaching"
+    url: /about/teaching
   - title: "CV"
     url: "/Bart-Gajderowicz-CV-latest.pdf"
   - title: "About"

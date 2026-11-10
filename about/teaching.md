@@ -9,6 +9,9 @@ Read my full [Teaching Philosophy](/about/teaching-philosophy)
 
 # Instructor
 
+Update coming soon...
+
+
 #### MIE 451 (1513) – Mechanical and Industrial Engineering Department
 University of Toronto, Toronto, Ontario1 semester: 2015
 MIE 451 Decision Support Systems.This course is co-taught as the graduate course MIE 1513. During the Fall 2015 semester, my responsibilities include designing the syllabus, creating and modifying slides for the entire course, managing one teaching assistant, creating exams, designing projects, mentoring students, and grading assigned course work. The course covers various techniques for information analysis, knowledge-based problem solving methods such as heuristic search, automated deduction, constraint satisfaction, and knowledge representation. Prolog is used as the main implementation language. Graduate students have a choice of a final project in Prolog or a combination of a Prolog and a research report.
